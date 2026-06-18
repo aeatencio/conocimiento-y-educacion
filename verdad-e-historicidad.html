@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="es">
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,27 +7,195 @@
 <title>Verdad e historicidad</title>
 <style>
 * {
-  margin: 0;
-  padding: 0;
+  box-sizing: border-box;
 }
-html {
+body {
+  margin: 0;
   font-family: ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji',
     'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  color: #1f2937;
+  background: #f6f7f9;
+}
+.page {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 24px 20px 48px;
+}
+.header {
+  margin-bottom: 16px;
+}
+.header h1 {
+  margin: 0 0 8px;
+  font-size: 2rem;
+  line-height: 1.15;
+}
+.header p {
+  margin: 0;
+  color: #6b7280;
+  line-height: 1.5;
+}
+.card {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(17,24,39,.06);
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+.section-title {
+  padding: 18px 22px 12px;
+  border-bottom: 1px solid #eef2f7;
+}
+.section-title h2 {
+  margin: 0 0 4px;
+  font-size: 1.1rem;
+}
+.section-title p {
+  margin: 0;
+  color: #6b7280;
+  line-height: 1.5;
+}
+.mindmap-wrap {
+  position: relative;
+  padding: 8px;
 }
 #mindmap {
   display: block;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 72vh;
+  min-height: 680px;
 }
-.markmap-dark {
-  background: #27272a;
+.content {
+  padding: 24px 28px 30px;
+}
+.content h2 {
+  margin: 0 0 12px;
+  font-size: 1.4rem;
+  line-height: 1.2;
+}
+.content h3 {
+  margin: 28px 0 10px;
+  font-size: 1.15rem;
+  line-height: 1.3;
+}
+.content p {
+  margin: 0 0 14px;
+  line-height: 1.75;
+  font-size: 1rem;
+}
+.content code {
+  background: #f3f4f6;
+  border: 1px solid #e5e7eb;
+  padding: 0.1rem 0.35rem;
+  border-radius: 6px;
+  font-size: .94em;
+}
+.markmap-dark body {
+  background: #18181b;
   color: white;
+}
+.markmap-dark .card {
+  background: #27272a;
+  border-color: #3f3f46;
+}
+.markmap-dark .section-title {
+  border-bottom-color: #3f3f46;
+}
+.markmap-dark .header p,
+.markmap-dark .section-title p {
+  color: #d4d4d8;
+}
+@media (max-width: 900px) {
+  .page {
+    padding: 16px 12px 32px;
+  }
+  #mindmap {
+    height: 65vh;
+    min-height: 520px;
+  }
+  .content {
+    padding: 20px 18px 24px;
+  }
 }
 </style>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.12/dist/style.css">
 </head>
 <body>
-<svg id="mindmap"></svg>
-<script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.18.12/dist/browser/index.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.12/dist/index.js"></script><script>(()=>{setTimeout(()=>{const{markmap:S,mm:Q}=window,$=new S.Toolbar;$.attach(Q);const I=$.render();I.setAttribute("style","position:absolute;bottom:20px;right:20px"),document.body.append(I)})})()</script><script>((l,U,M,R)=>{const N=l();window.mm=N.Markmap.create("svg#mindmap",(U||N.deriveOptions)(R),M),window.matchMedia("(prefers-color-scheme: dark)").matches&&document.documentElement.classList.add("markmap-dark")})(()=>window.markmap,null,{"content":"Verdad e historicidad. El conocimiento cient&#xed;fico y sus fracturas","children":[{"content":"1. El conocimiento cient&#xed;fico: doble sentido y doble origen","children":[{"content":"saber &#xb7; verdad &#xb7; poder","children":[{"content":"vida social","children":[],"payload":{"tag":"h4","lines":"13,14"}},{"content":"informaci&#xf3;n","children":[],"payload":{"tag":"h4","lines":"14,15"}}],"payload":{"tag":"h3","lines":"12,13"}},{"content":"ciencia actual","children":[{"content":"requisitos","children":[{"content":"leyes","children":[{"content":"descripci&#xf3;n &#xb7; explicaci&#xf3;n &#xb7; predicci&#xf3;n","children":[],"payload":{"tag":"h6","lines":"19,20"}}],"payload":{"tag":"h5","lines":"18,19"}},{"content":"criticidad","children":[{"content":"pregunta","children":[],"payload":{"tag":"h6","lines":"21,22"}},{"content":"duda","children":[],"payload":{"tag":"h6","lines":"22,23"}},{"content":"vs. dogma","children":[],"payload":{"tag":"h6","lines":"23,24"}}],"payload":{"tag":"h5","lines":"20,21"}},{"content":"fundamentaci&#xf3;n","children":[{"content":"l&#xf3;gica","children":[],"payload":{"tag":"h6","lines":"25,26"}},{"content":"empiria","children":[],"payload":{"tag":"h6","lines":"26,27"}}],"payload":{"tag":"h5","lines":"24,25"}},{"content":"m&#xe9;todo","children":[{"content":"verificaci&#xf3;n","children":[],"payload":{"tag":"h6","lines":"28,29"}},{"content":"comprobaci&#xf3;n","children":[],"payload":{"tag":"h6","lines":"29,30"}}],"payload":{"tag":"h5","lines":"27,28"}},{"content":"objetividad","children":[],"payload":{"tag":"h5","lines":"30,31"}}],"payload":{"tag":"h4","lines":"17,18"}}],"payload":{"tag":"h3","lines":"16,17"}},{"content":"doble origen","children":[{"content":"Grecia","children":[{"content":"logos","children":[],"payload":{"tag":"h5","lines":"34,35"}},{"content":"episteme","children":[],"payload":{"tag":"h5","lines":"35,36"}}],"payload":{"tag":"h4","lines":"33,34"}},{"content":"modernidad","children":[{"content":"empiria","children":[],"payload":{"tag":"h5","lines":"37,38"}},{"content":"t&#xe9;cnica","children":[],"payload":{"tag":"h5","lines":"38,39"}}],"payload":{"tag":"h4","lines":"36,37"}}],"payload":{"tag":"h3","lines":"32,33"}}],"payload":{"tag":"h2","lines":"10,11"}},{"content":"1.1. &#x201c;Ciencia&#x201d; en sentido amplio: un concepto epocal","children":[{"content":"sentido restringido","children":[{"content":"criterios modernos","children":[],"payload":{"tag":"h4","lines":"43,44"}}],"payload":{"tag":"h3","lines":"42,43"}},{"content":"sentido amplio","children":[{"content":"saber s&#xf3;lido","children":[],"payload":{"tag":"h4","lines":"46,47"}},{"content":"&#xe9;poca","children":[],"payload":{"tag":"h4","lines":"47,48"}},{"content":"paradigmas epocales","children":[{"content":"premoderno","children":[{"content":"antig&#xfc;edad cl&#xe1;sica","children":[],"payload":{"tag":"h6","lines":"51,52"}},{"content":"Edad Media","children":[],"payload":{"tag":"h6","lines":"54,55"}},{"content":"suelo com&#xfa;n","children":[],"payload":{"tag":"h6","lines":"57,58"}}],"payload":{"tag":"h5","lines":"50,51"}},{"content":"moderno","children":[{"content":"secularizaci&#xf3;n","children":[],"payload":{"tag":"h6","lines":"62,63"}},{"content":"racionalidad plena","children":[],"payload":{"tag":"h6","lines":"63,64"}},{"content":"verdad fuerte","children":[],"payload":{"tag":"h6","lines":"64,65"}},{"content":"progreso","children":[],"payload":{"tag":"h6","lines":"65,66"}},{"content":"ciencia modelo","children":[],"payload":{"tag":"h6","lines":"66,67"}}],"payload":{"tag":"h5","lines":"61,62"}},{"content":"actual / tardomoderno / posmoderno","children":[{"content":"crisis moderna","children":[],"payload":{"tag":"h6","lines":"69,70"}},{"content":"fragmentaci&#xf3;n del sentido","children":[],"payload":{"tag":"h6","lines":"70,71"}},{"content":"verdad d&#xe9;bil","children":[],"payload":{"tag":"h6","lines":"71,72"}},{"content":"cr&#xed;tica del progreso","children":[],"payload":{"tag":"h6","lines":"72,73"}},{"content":"cr&#xed;tica del cientificismo","children":[],"payload":{"tag":"h6","lines":"73,74"}}],"payload":{"tag":"h5","lines":"68,69"}}],"payload":{"tag":"h4","lines":"48,49"}}],"payload":{"tag":"h3","lines":"45,46"}}],"payload":{"tag":"h2","lines":"40,41"}},{"content":"2. El proyecto filos&#xf3;fico de la modernidad: raz&#xf3;n, verdad y objetividad","children":[{"content":"2.1. Los fundamentos filos&#xf3;ficos de la ciencia moderna","children":[{"content":"a priori matem&#xe1;tico","children":[{"content":"c&#xe1;lculo","children":[],"payload":{"tag":"h5","lines":"79,80"}},{"content":"medida","children":[],"payload":{"tag":"h5","lines":"80,81"}},{"content":"exactitud","children":[],"payload":{"tag":"h5","lines":"81,82"}}],"payload":{"tag":"h4","lines":"78,79"}},{"content":"sujeto / objeto","children":[{"content":"distancia","children":[],"payload":{"tag":"h5","lines":"83,84"}},{"content":"objetividad","children":[],"payload":{"tag":"h5","lines":"84,85"}}],"payload":{"tag":"h4","lines":"82,83"}},{"content":"raz&#xf3;n instrumental","children":[{"content":"t&#xe9;cnica","children":[],"payload":{"tag":"h5","lines":"86,87"}},{"content":"dominio","children":[],"payload":{"tag":"h5","lines":"87,88"}}],"payload":{"tag":"h4","lines":"85,86"}}],"payload":{"tag":"h3","lines":"77,78"}},{"content":"2.2. &#x201c;Ciencia&#x201d; y &#x201c;progreso&#x201d;: aparici&#xf3;n de las ciencias sociales y clasificaci&#xf3;n de las ciencias","children":[{"content":"criterios","children":[{"content":"objeto","children":[],"payload":{"tag":"h5","lines":"91,92"}},{"content":"enunciado","children":[],"payload":{"tag":"h5","lines":"92,93"}},{"content":"verdad","children":[],"payload":{"tag":"h5","lines":"93,94"}},{"content":"m&#xe9;todo","children":[],"payload":{"tag":"h5","lines":"94,95"}}],"payload":{"tag":"h4","lines":"90,91"}},{"content":"ciencias formales","children":[{"content":"l&#xf3;gica","children":[],"payload":{"tag":"h5","lines":"96,97"}},{"content":"matem&#xe1;tica","children":[],"payload":{"tag":"h5","lines":"97,98"}},{"content":"verdad necesaria","children":[],"payload":{"tag":"h5","lines":"98,99"}}],"payload":{"tag":"h4","lines":"95,96"}},{"content":"ciencias f&#xe1;cticas","children":[{"content":"naturales","children":[],"payload":{"tag":"h5","lines":"100,101"}},{"content":"sociales","children":[],"payload":{"tag":"h5","lines":"101,102"}},{"content":"verdad contingente","children":[],"payload":{"tag":"h5","lines":"102,103"}},{"content":"contrastaci&#xf3;n","children":[],"payload":{"tag":"h5","lines":"103,104"}}],"payload":{"tag":"h4","lines":"99,100"}},{"content":"ciencias sociales","children":[{"content":"positivismo","children":[],"payload":{"tag":"h5","lines":"105,106"}},{"content":"hermen&#xe9;utica","children":[],"payload":{"tag":"h5","lines":"106,107"}}],"payload":{"tag":"h4","lines":"104,105"}}],"payload":{"tag":"h3","lines":"89,90"}},{"content":"2.3. Facticidad y validaci&#xf3;n: la relaci&#xf3;n entre la ciencia y lo hist&#xf3;rico","children":[{"content":"verdades cient&#xed;ficas / historia","children":[],"payload":{"tag":"h4","lines":"109,110"}},{"content":"facticidad / validaci&#xf3;n","children":[{"content":"facticidad","children":[{"content":"historicidad","children":[],"payload":{"tag":"h6","lines":"112,113"}}],"payload":{"tag":"h5","lines":"111,112"}},{"content":"validaci&#xf3;n","children":[{"content":"verdad","children":[],"payload":{"tag":"h6","lines":"114,115"}}],"payload":{"tag":"h5","lines":"113,114"}}],"payload":{"tag":"h4","lines":"110,111"}},{"content":"descubrimiento / justificaci&#xf3;n","children":[],"payload":{"tag":"h4","lines":"115,116"}},{"content":"historia externa / interna","children":[],"payload":{"tag":"h4","lines":"116,117"}}],"payload":{"tag":"h3","lines":"108,109"}}],"payload":{"tag":"h2","lines":"75,76"}}],"payload":{"tag":"h1","lines":"8,9"}},{"colorFreezeLevel":2,"maxWidth":230,"initialExpandLevel":2})</script>
+<div class="page">
+  <div class="header">
+    <h1>Verdad e historicidad</h1>
+    <p>Cuadro conceptual y guía de lectura del capítulo “El conocimiento científico y sus fracturas”, de Rubén H. Pardo.</p>
+  </div>
+
+  <section class="card">
+    <div class="section-title">
+      <h2>Cuadro conceptual</h2>
+      <p>El mapa muestra la estructura general del capítulo y se puede expandir por niveles.</p>
+    </div>
+    <div class="mindmap-wrap">
+      <svg id="mindmap"></svg>
+    </div>
+  </section>
+
+  <section class="card">
+    <div class="section-title">
+      <h2>Texto explicativo</h2>
+      <p>Desarrollo del tema a partir del cuadro.</p>
+    </div>
+    <div class="content">
+      <h2>Guía de lectura del capítulo</h2>
+
+      <h3>1. El conocimiento científico: doble sentido y doble origen</h3>
+      <p>El capítulo abre con una idea amplia: el saber forma parte de la vida social. Pardo vincula conocimiento, verdad y poder, y ubica a la ciencia y a la técnica dentro de ese horizonte. En las sociedades actuales, la información y el conocimiento ocupan un lugar decisivo. Desde ahí surge la pregunta por la ciencia.</p>
+      <p>La primera respuesta del texto se concentra en la ciencia tal como hoy suele entenderse. Pardo presenta una serie de requisitos de cientificidad: capacidad de describir, explicar y predecir mediante leyes; actitud crítica; fundamentación lógica y empírica; método; sistematicidad; lenguaje preciso; y pretensión de objetividad. El cuadro reúne estos rasgos dentro de <code>ciencia actual</code> porque el texto los presenta como características de la comprensión moderna y habitual de la ciencia.</p>
+      <p>La sección termina con la idea de <code>doble origen</code>. Nuestra idea actual de ciencia recoge un origen remoto en Grecia, ligado a <code>logos</code> y <code>episteme</code>, y un origen reciente en la modernidad, donde la ciencia se articula con empiria, técnica y razón matemática. Esa doble procedencia prepara el pasaje hacia una mirada histórica del concepto de ciencia.</p>
+
+      <h3>1.1. “Ciencia” en sentido amplio: un concepto epocal</h3>
+      <p>En esta subsección aparece la distinción decisiva entre <code>sentido restringido</code> y <code>sentido amplio</code>. El sentido restringido coincide con la ciencia medida por criterios modernos. El sentido amplio define la ciencia como el saber que una época considera sólido. A partir de esa ampliación, Pardo introduce los <code>paradigmas epocales</code>.</p>
+      <p>El paradigma <code>premoderno</code> reúne antigüedad clásica y Edad Media. En la antigüedad clásica, el texto trabaja dos oposiciones: <code>mythos / logos</code> y <code>doxa / episteme</code>. Logos refiere al discurso demostrativo y fundado; episteme, al saber racional y crítico. En la Edad Media, el eje se organiza en torno a <code>fe / razón</code> y <code>orden divino</code>. Pardo agrega un suelo común entre ambos períodos: geocentrismo, teleología y una idea amplia de ciencia, en la que la experiencia no ocupa todavía el lugar supremo.</p>
+      <p>El paradigma <code>moderno</code> concentra secularización, racionalidad plena, verdad fuerte, progreso y ciencia como modelo de conocimiento. El paradigma <code>actual / tardomoderno / posmoderno</code> reúne la crisis de ese programa: fragmentación del sentido, verdad débil, crítica del progreso y crítica del cientificismo. El recorrido del capítulo muestra así cómo cambia históricamente la idea de ciencia.</p>
+
+      <h3>2. El proyecto filosófico de la modernidad: razón, verdad y objetividad</h3>
+      <p>La segunda gran parte del texto profundiza en los fundamentos filosóficos de la modernidad. Pardo desarrolla este bloque antes de clasificar las ciencias y antes de tratar la relación entre verdad e historia. El cuadro conserva ese orden y abre la sección en sus tres subsecciones: <code>2.1</code>, <code>2.2</code> y <code>2.3</code>.</p>
+
+      <h3>2.1. Los fundamentos filosóficos de la ciencia moderna</h3>
+      <p>El núcleo de esta subsección es el <code>a priori matemático</code>. La realidad moderna aparece como calculable, medible y exacta. Esa forma de comprensión sostiene la matematización de la naturaleza y el lugar central del método.</p>
+      <p>Desde ahí se organiza la relación <code>sujeto / objeto</code>. El sujeto representa y calcula; el objeto puede medirse y disponerse. La objetividad moderna depende de esa distancia. La rama <code>razón instrumental</code> completa el cuadro: la razón orienta medios, la técnica prolonga ese cálculo y el dominio de la naturaleza se vuelve una nota central de la ciencia moderna.</p>
+
+      <h3>2.2. “Ciencia” y “progreso”: aparición de las ciencias sociales y clasificación de las ciencias</h3>
+      <p>Esta subsección ordena la clasificación de las ciencias a partir de cuatro <code>criterios</code>: objeto, enunciado, verdad y método. Desde ahí Pardo distingue entre <code>ciencias formales</code> y <code>ciencias fácticas</code>.</p>
+      <p>Las ciencias formales trabajan con lógica, matemática y verdades necesarias. Las ciencias fácticas se ocupan de hechos y procesos empíricos, por eso su verdad es contingente y depende de contrastación. Dentro de estas últimas aparecen las ciencias naturales y las ciencias sociales.</p>
+      <p>La discusión sobre las ciencias sociales se condensa en dos polos del cuadro: <code>positivismo</code> y <code>hermenéutica</code>. El primero toma como modelo a las ciencias naturales; la segunda subraya la especificidad histórica y lingüística de lo social.</p>
+
+      <h3>2.3. Facticidad y validación: la relación entre la ciencia y lo histórico</h3>
+      <p>En esta subsección aparece el problema que da título al capítulo: la relación entre <code>verdades científicas / historia</code>. Pardo reconoce el carácter histórico de la producción científica y formula la pregunta decisiva por la verdad: de qué modo interviene la historia en el conocimiento científico.</p>
+      <p>El par <code>facticidad / validación</code> resume esa tensión. Facticidad señala historicidad; validación señala verdad. A partir de ahí, Pardo reconstruye dos distinciones clásicas: <code>descubrimiento / justificación</code> e <code>historia externa / interna</code>.</p>
+      <p>El contexto de descubrimiento remite a la génesis histórica de una hipótesis o de una teoría. El contexto de justificación se concentra en su estructura lógica, su prueba y su corrección. La historia externa sigue el acontecer científico en relación con las prácticas sociales; la historia interna reconstruye racionalmente el desarrollo de las ideas. El recorrido del capítulo desemboca así en una tensión fuerte entre verdad científica e historicidad.</p>
+    </div>
+  </section>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/markmap-view@0.18.12/dist/browser/index.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.12/dist/index.js"></script>
+<script>
+(() => {
+  setTimeout(() => {
+    const { markmap, mm } = window;
+    const toolbar = new markmap.Toolbar;
+    toolbar.attach(mm);
+    const el = toolbar.render();
+    el.setAttribute("style", "position:absolute;bottom:20px;right:20px");
+    document.querySelector(".mindmap-wrap").append(el);
+  });
+})();
+</script>
+<script>
+((l,U,M,R)=>{
+  const N=l();
+  window.mm=N.Markmap.create("svg#mindmap",(U||N.deriveOptions)(R),M);
+  window.matchMedia("(prefers-color-scheme: dark)").matches&&document.documentElement.classList.add("markmap-dark")
+})(()=>window.markmap,null,{"content":"Verdad e historicidad. El conocimiento cient&#xed;fico y sus fracturas","children":[{"content":"1. El conocimiento cient&#xed;fico: doble sentido y doble origen","children":[{"content":"saber &#xb7; verdad &#xb7; poder","children":[{"content":"vida social","children":[],"payload":{"tag":"h4","lines":"13,14"}},{"content":"informaci&#xf3;n","children":[],"payload":{"tag":"h4","lines":"14,15"}}],"payload":{"tag":"h3","lines":"12,13"}},{"content":"ciencia actual","children":[{"content":"requisitos","children":[{"content":"leyes","children":[{"content":"descripci&#xf3;n &#xb7; explicaci&#xf3;n &#xb7; predicci&#xf3;n","children":[],"payload":{"tag":"h6","lines":"19,20"}}],"payload":{"tag":"h5","lines":"18,19"}},{"content":"criticidad","children":[{"content":"pregunta","children":[],"payload":{"tag":"h6","lines":"21,22"}},{"content":"duda","children":[],"payload":{"tag":"h6","lines":"22,23"}},{"content":"vs. dogma","children":[],"payload":{"tag":"h6","lines":"23,24"}}],"payload":{"tag":"h5","lines":"20,21"}},{"content":"fundamentaci&#xf3;n","children":[{"content":"l&#xf3;gica","children":[],"payload":{"tag":"h6","lines":"25,26"}},{"content":"empiria","children":[],"payload":{"tag":"h6","lines":"26,27"}}],"payload":{"tag":"h5","lines":"24,25"}},{"content":"m&#xe9;todo","children":[{"content":"verificaci&#xf3;n","children":[],"payload":{"tag":"h6","lines":"28,29"}},{"content":"comprobaci&#xf3;n","children":[],"payload":{"tag":"h6","lines":"29,30"}}],"payload":{"tag":"h5","lines":"27,28"}},{"content":"objetividad","children":[],"payload":{"tag":"h5","lines":"30,31"}}],"payload":{"tag":"h4","lines":"17,18"}}],"payload":{"tag":"h3","lines":"16,17"}},{"content":"doble origen","children":[{"content":"Grecia","children":[{"content":"logos","children":[],"payload":{"tag":"h5","lines":"34,35"}},{"content":"episteme","children":[],"payload":{"tag":"h5","lines":"35,36"}}],"payload":{"tag":"h4","lines":"33,34"}},{"content":"modernidad","children":[{"content":"empiria","children":[],"payload":{"tag":"h5","lines":"37,38"}},{"content":"t&#xe9;cnica","children":[],"payload":{"tag":"h5","lines":"38,39"}}],"payload":{"tag":"h4","lines":"36,37"}}],"payload":{"tag":"h3","lines":"32,33"}}],"payload":{"tag":"h2","lines":"10,11"}},{"content":"1.1. &#x201c;Ciencia&#x201d; en sentido amplio: un concepto epocal","children":[{"content":"sentido restringido","children":[{"content":"criterios modernos","children":[],"payload":{"tag":"h4","lines":"43,44"}}],"payload":{"tag":"h3","lines":"42,43"}},{"content":"sentido amplio","children":[{"content":"saber s&#xf3;lido","children":[],"payload":{"tag":"h4","lines":"46,47"}},{"content":"&#xe9;poca","children":[],"payload":{"tag":"h4","lines":"47,48"}},{"content":"paradigmas epocales","children":[{"content":"premoderno","children":[{"content":"antig&#xfc;edad cl&#xe1;sica","children":[],"payload":{"tag":"h6","lines":"51,52"}},{"content":"Edad Media","children":[],"payload":{"tag":"h6","lines":"54,55"}},{"content":"suelo com&#xfa;n","children":[],"payload":{"tag":"h6","lines":"57,58"}}],"payload":{"tag":"h5","lines":"50,51"}},{"content":"moderno","children":[{"content":"secularizaci&#xf3;n","children":[],"payload":{"tag":"h6","lines":"62,63"}},{"content":"racionalidad plena","children":[],"payload":{"tag":"h6","lines":"63,64"}},{"content":"verdad fuerte","children":[],"payload":{"tag":"h6","lines":"64,65"}},{"content":"progreso","children":[],"payload":{"tag":"h6","lines":"65,66"}},{"content":"ciencia modelo","children":[],"payload":{"tag":"h6","lines":"66,67"}}],"payload":{"tag":"h5","lines":"61,62"}},{"content":"actual / tardomoderno / posmoderno","children":[{"content":"crisis moderna","children":[],"payload":{"tag":"h6","lines":"69,70"}},{"content":"fragmentaci&#xf3;n del sentido","children":[],"payload":{"tag":"h6","lines":"70,71"}},{"content":"verdad d&#xe9;bil","children":[],"payload":{"tag":"h6","lines":"71,72"}},{"content":"cr&#xed;tica del progreso","children":[],"payload":{"tag":"h6","lines":"72,73"}},{"content":"cr&#xed;tica del cientificismo","children":[],"payload":{"tag":"h6","lines":"73,74"}}],"payload":{"tag":"h5","lines":"68,69"}}],"payload":{"tag":"h4","lines":"48,49"}}],"payload":{"tag":"h3","lines":"45,46"}}],"payload":{"tag":"h2","lines":"40,41"}},{"content":"2. El proyecto filos&#xf3;fico de la modernidad: raz&#xf3;n, verdad y objetividad","children":[{"content":"2.1. Los fundamentos filos&#xf3;ficos de la ciencia moderna","children":[{"content":"a priori matem&#xe1;tico","children":[{"content":"c&#xe1;lculo","children":[],"payload":{"tag":"h5","lines":"79,80"}},{"content":"medida","children":[],"payload":{"tag":"h5","lines":"80,81"}},{"content":"exactitud","children":[],"payload":{"tag":"h5","lines":"81,82"}}],"payload":{"tag":"h4","lines":"78,79"}},{"content":"sujeto / objeto","children":[{"content":"distancia","children":[],"payload":{"tag":"h5","lines":"83,84"}},{"content":"objetividad","children":[],"payload":{"tag":"h5","lines":"84,85"}}],"payload":{"tag":"h4","lines":"82,83"}},{"content":"raz&#xf3;n instrumental","children":[{"content":"t&#xe9;cnica","children":[],"payload":{"tag":"h5","lines":"86,87"}},{"content":"dominio","children":[],"payload":{"tag":"h5","lines":"87,88"}}],"payload":{"tag":"h4","lines":"85,86"}}],"payload":{"tag":"h3","lines":"77,78"}},{"content":"2.2. &#x201c;Ciencia&#x201d; y &#x201c;progreso&#x201d;: aparici&#xf3;n de las ciencias sociales y clasificaci&#xf3;n de las ciencias","children":[{"content":"criterios","children":[{"content":"objeto","children":[],"payload":{"tag":"h5","lines":"91,92"}},{"content":"enunciado","children":[],"payload":{"tag":"h5","lines":"92,93"}},{"content":"verdad","children":[],"payload":{"tag":"h5","lines":"93,94"}},{"content":"m&#xe9;todo","children":[],"payload":{"tag":"h5","lines":"94,95"}}],"payload":{"tag":"h4","lines":"90,91"}},{"content":"ciencias formales","children":[{"content":"l&#xf3;gica","children":[],"payload":{"tag":"h5","lines":"96,97"}},{"content":"matem&#xe1;tica","children":[],"payload":{"tag":"h5","lines":"97,98"}},{"content":"verdad necesaria","children":[],"payload":{"tag":"h5","lines":"98,99"}}],"payload":{"tag":"h4","lines":"95,96"}},{"content":"ciencias f&#xe1;cticas","children":[{"content":"naturales","children":[],"payload":{"tag":"h5","lines":"100,101"}},{"content":"sociales","children":[],"payload":{"tag":"h5","lines":"101,102"}},{"content":"verdad contingente","children":[],"payload":{"tag":"h5","lines":"102,103"}},{"content":"contrastaci&#xf3;n","children":[],"payload":{"tag":"h5","lines":"103,104"}}],"payload":{"tag":"h4","lines":"99,100"}},{"content":"ciencias sociales","children":[{"content":"positivismo","children":[],"payload":{"tag":"h5","lines":"105,106"}},{"content":"hermen&#xe9;utica","children":[],"payload":{"tag":"h5","lines":"106,107"}}],"payload":{"tag":"h4","lines":"104,105"}}],"payload":{"tag":"h3","lines":"89,90"}},{"content":"2.3. Facticidad y validaci&#xf3;n: la relaci&#xf3;n entre la ciencia y lo hist&#xf3;rico","children":[{"content":"verdades cient&#xed;ficas / historia","children":[],"payload":{"tag":"h4","lines":"109,110"}},{"content":"facticidad / validaci&#xf3;n","children":[{"content":"facticidad","children":[{"content":"historicidad","children":[],"payload":{"tag":"h6","lines":"112,113"}}],"payload":{"tag":"h5","lines":"111,112"}},{"content":"validaci&#xf3;n","children":[{"content":"verdad","children":[],"payload":{"tag":"h6","lines":"114,115"}}],"payload":{"tag":"h5","lines":"113,114"}}],"payload":{"tag":"h4","lines":"110,111"}},{"content":"descubrimiento / justificaci&#xf3;n","children":[],"payload":{"tag":"h4","lines":"115,116"}},{"content":"historia externa / interna","children":[],"payload":{"tag":"h4","lines":"116,117"}}],"payload":{"tag":"h3","lines":"108,109"}}],"payload":{"tag":"h2","lines":"75,76"}}],"payload":{"tag":"h1","lines":"8,9"}},{"colorFreezeLevel":2,"maxWidth":230,"initialExpandLevel":2})
+</script>
 </body>
 </html>
